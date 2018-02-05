@@ -1,3 +1,4 @@
+// this function gives us a random hex code
 function getRandomColor() {
     var letters = '0123456789ABCDEF';
     var color = '#';
@@ -7,14 +8,15 @@ function getRandomColor() {
     return color;
 }
 
+// this function prepare the linear gradient,
+// outputs gradient & background code
 function setRandomColor() {
     var thePad = document.getElementById('color-pad').style.background = 'linear-gradient(' +
         'to right' + ', ' + getRandomColor() + ' 0%, ' + getRandomColor() + ' 100%)';
 
     document.getElementById("gradient-output").innerHTML = thePad;
 
-    console.log(thePad);
     return thePad;
 }
 
-document.getElementById("gradient-output").innerHTML = setRandomColor();
+//document.getElementById("color-pad").css = setRandomColor();

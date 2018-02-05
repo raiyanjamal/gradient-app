@@ -4,15 +4,26 @@
 }
 
 #color-pad {
-    width: 100vw;
+    width: 100%;
     height: 100vh;
-    background: linear-gradient(to right, #a20101 0%, #ffcc3c 100%);
+    background: linear-gradient(to right, #ef8906 0%, #cc0365 100%);
     position: relative;
+    margin-top: 70px;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 70px;
+    background: #ffffff;
 }
 
 img.main-icon {
     position: absolute;
-    top: 5%;
+    top: 0;
+    padding: 15px;
+    width: 40px;
     left: 50%;
     transform: translate(-50%);
 }
@@ -40,7 +51,7 @@ img.main-icon {
     bottom: 10%;
     left: 50%;
     transform: translateX(-50%);
-    background: rgba(245, 245, 245, 0.5);
+    background: rgba(245, 245, 245, 0.25);
     padding: 10px 25px;
     border: 1px solid #ffffff;
     border-radius: 5px;
