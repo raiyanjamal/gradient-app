@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#color-pad {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(to right, #a20101 0%, #ffcc3c 100%);
+    /* background: linear-gradient(to right, $startGradientColor 0%, $endGradientColor 100%); */
+    position: relative;
+}
+
+.sub-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: none;
+    border: 1px solid #ffffff;
+    border-radius: 50px;
+    padding: 20px 40px;
+    font-size: 40px;
+}
+
+.sub-btn:hover {
+    background: #ffffff40;
+}
+
+#gradient-output {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+}
