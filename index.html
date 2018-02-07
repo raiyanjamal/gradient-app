@@ -8,7 +8,6 @@
     <title>Gradient App</title>
 
     <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
 </head>
 
@@ -20,13 +19,26 @@
         <img class="main-icon" src="assets/icon-gradient-app.svg" alt="Gradient App Icon">
     </header>
 
-    <button data-key="32" class="sub-btn" type="submit" onclick="setRandomColor()">Random Gradient 🌈
+    <button class="sub-btn" type="submit" onclick="setRandomColor()">Random Gradient 🌈
     </button>
 
     <code id="gradient-output">Welcome to Gradient App! Click on "Random Gradient 🌈" to begin.</code>
 
     <script src=" https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js "></script>
     <script src="script.js "></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-113742038-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-113742038-1');
+    </script>
+
 </body>
 
 </html>

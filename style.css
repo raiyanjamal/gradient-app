@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400');
 * {
     margin: 0;
     padding: 0;
@@ -48,7 +49,7 @@ img.main-icon {
 
 #gradient-output {
     position: absolute;
-    bottom: 10%;
+    bottom: 5%;
     left: 50%;
     transform: translateX(-50%);
     background: rgba(245, 245, 245, 0.3);
