@@ -20,5 +20,4 @@ function setRandomColor() {
     var thePad = document.getElementById('color-pad').style.background = 'linear-gradient(' +
         inAngle + 'deg' + ', ' + getRandomColor() + ' 0%, ' + getRandomColor() + ' 100%)';
     document.getElementById("gradient-output").innerHTML = thePad;
-    return thePad;
 }
