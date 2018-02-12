@@ -9,7 +9,7 @@
 #color-pad {
     width: 100%;
     height: 100vh;
-    background: linear-gradient(to right, #ef8906 0%, #cc0365 100%);
+    background: url(assets/empty-bg.png), linear-gradient(to right, #ef8906 0%, #cc0365 100%);
     position: relative;
     margin-top: 70px;
 }
