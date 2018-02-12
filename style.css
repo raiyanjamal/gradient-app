@@ -14,6 +14,14 @@
     margin-top: 70px;
 }
 
+#color-pad2 {
+    width: 100%;
+    height: 100vh;
+    background: url(assets/empty-bg.png), linear-gradient(to right, #ef8906 0%, #cc0365 100%);
+    position: relative;
+    margin-top: 70px;
+}
+
 header {
     position: absolute;
     top: 0;
