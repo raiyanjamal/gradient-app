@@ -10,8 +10,10 @@
     width: 100%;
     height: 100vh;
     background: url(assets/empty-bg.png), linear-gradient(to right, #ef8906 0%, #cc0365 100%);
-    position: relative;
-    margin-top: 70px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
 }
 
 #color-pad2 {
@@ -23,30 +25,23 @@
 }
 
 header {
-    position: absolute;
-    top: 0;
+    margin: 0 auto;
+    max-width: 1280px;
     width: 100%;
     height: 70px;
     background: #ffffff;
 }
 
 img.main-icon {
-    position: absolute;
-    top: 0;
     padding: 15px;
     width: 40px;
-    left: 50%;
-    transform: translate(-50%);
 }
 
 .sub-btn {
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
-    position: absolute;
-    top: 50%;
-    left: 50%;
+    color: #000000;
     background: none;
-    transform: translate(-50%, -50%);
     border: 1px solid #ffffff;
     border-radius: 50px;
     padding: 15px 40px;
@@ -66,4 +61,18 @@ img.main-icon {
     padding: 10px 25px;
     border: 1px solid #ffffff;
     border-radius: 5px;
+}
+
+@media only screen and (max-width: 768px) {
+    img.main-icon {
+        position: absolute;
+        top: 0;
+        padding: 15px;
+        width: 40px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .sub-btn {
+        font-size: 30px;
+    }
 }
