@@ -47,3 +47,9 @@ function setRandomRed() {
         getRandomAngle() + 'deg' + ', ' + getRandomRed() + ' 0%, ' + getRandomOrange() + ' 100%)';
     document.getElementById("gradient-output2").innerHTML = thePad2;
 }
+// button animate using jQuery
+$(".sub-btn").click(function () {
+    $('html, body').animate({
+        scrollTop: $("#color-pad").offset().top
+    }, 500);
+})
