@@ -89,6 +89,7 @@ img.main-icon {
     border-radius: 50px;
     padding: 15px 40px;
     font-size: 40px;
+    outline: none;
 }
 
 #sub-btn:hover {
