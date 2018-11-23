@@ -40,6 +40,8 @@ let setRandomColor = () => {
     var thePad = document.getElementById('color-pad').style.background = 'linear-gradient(' +
         getRandomAngle() + 'deg' + ', ' + getRandomColor() + ' 0%, ' + getRandomColor() + ' 100%)';
     document.getElementById("gradient-output").innerHTML = thePad;
+    var elmnt = document.getElementById("color-pad");
+    elmnt.scrollIntoView({ behavior: 'smooth' });
 }
 
 let setRandomRed = () => {
@@ -48,8 +50,8 @@ let setRandomRed = () => {
     document.getElementById("gradient-output2").innerHTML = thePad2;
 }
 // button animate using jQuery
-$("#sub-btn").click(function () {
-    $('html, body').animate({
-        scrollTop: $("#color-pad").offset().top
-    }, 500);
-})
+// $("#sub-btn").click(function () {
+//     $('html, body').animate({
+//         scrollTop: $("#color-pad").offset().top
+//     }, 500);
+// })
