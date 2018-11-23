@@ -88,7 +88,7 @@ img.main-icon {
     border: 1px solid #ffffff;
     border-radius: 50px;
     padding: 15px 40px;
-    font-size: 40px;
+    font-size: 4vw;
     outline: none;
 }
 
@@ -106,18 +106,4 @@ img.main-icon {
     margin: 10px 0;
     border: 1px solid #ffffff;
     border-radius: 5px;
-}
-
-@media only screen and (max-width: 768px) {
-    img.main-icon {
-        position: absolute;
-        top: 0;
-        padding: 15px;
-        width: 40px;
-        left: 50%;
-        transform: translateX(-50%);
-    }
-    #sub-btn {
-        font-size: 30px;
-    }
 }
