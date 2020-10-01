@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>Gradient App</title>
 
@@ -12,13 +12,26 @@
 </head>
 
 <body>
-    <header>
-        <img class="main-icon" src="assets/icon-gradient-app.svg" alt="Gradient App Icon">
-    </header>
+    <div class="container">
+        <header>
+            <img class="main-icon" src="assets/icon-gradient-app.svg" alt="Gradient App Icon">
+        </header>
+    </div>
 
     <div id="color-pad">
-        <button id="sub-btn" type="submit">Random Gradient</button>
-        <code id="gradient-output">Welcome to Gradient App! Click on "Random Gradient" to begin.</code>
+        <div class="container">
+            <div class="color-pad-inner">
+                <div class="col col-60">
+                    <button id="sub-btn" type="submit">Random Gradient</button>
+                </div>
+                <div class="col col-40">
+                    <div class="gradientOutput">
+                        <code id="gradient-output">Welcome to Gradient App! Click on "Random Gradient" to begin.</code>
+                        <span id="copy"><img src="./assets/copy.svg" alt="Click to Copy"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <script src="script.js "></script>

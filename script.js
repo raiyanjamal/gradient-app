@@ -30,4 +30,12 @@ document.getElementById('sub-btn').addEventListener("click", () => {
     let thePad = document.getElementById('color-pad').style.background = getRandomGradient();
     // updates the output view
     document.getElementById("gradient-output").innerHTML = thePad;
+    // changes from "none" to "block" for the copy icon
+    document.getElementById("copy").style.display = "block";
+})
+
+document.getElementById('copy').addEventListener("click", () => {
+    let copyText = document.getElementById("gradient-output").innerHTML;
+    
+    window.prompt("Copy to clipboard: Press Command + C or Ctrl + C, Enter", copyText);
 })
