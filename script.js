@@ -76,6 +76,7 @@ document.getElementById('sub-btn').addEventListener("click", () => {
     if(window.localStorage.length > 1) {
         document.getElementById('back-btn').disabled = false;
     }
+    document.getElementById('front-btn').disabled = true;
     // counter is literally the index of Key in localStorage
     // after the click, counter is set to the last Key
     counter = window.localStorage.length - 1;
