@@ -84,8 +84,8 @@ img.main-icon {
     background: none;
     border: 1px solid #ffffff;
     border-radius: 100px;
-    padding: 2vw 3vw;
-    font-size: 4vw;
+    padding: 2vw 5% 2.1vw;
+    font-size: calc(20px + 2vw);
     line-height: 1;
     outline: none;
     cursor: pointer;
