@@ -140,6 +140,7 @@ img.main-icon {
   width: 400px;
   height: 250px;
   margin: 15px;
+  border-radius: 5px;
 }
 
 .controls-btn {

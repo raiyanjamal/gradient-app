@@ -41,9 +41,6 @@ if(window.localStorage.length > 0) {
         child.setAttribute('class', 'flex-item');
         parent.appendChild(child);
         document.getElementById(childName).style.background = inner[0].value;
-        let childIndex = document.createElement('h1');
-        childIndex.innerHTML = inner[0].id;
-        child.appendChild(childIndex);
     }
 } else {
     document.getElementById('history-header').innerHTML = "empty!"
@@ -89,9 +86,6 @@ document.getElementById('sub-btn').addEventListener("click", () => {
     child.setAttribute('class', 'flex-item');
     parent.appendChild(child);
     document.getElementById(childName).style.background = thePad;
-    let childIndex = document.createElement('h1');
-    childIndex.innerHTML = gradIndex;
-    child.appendChild(childIndex);
 
     gradIndex++;
 })
