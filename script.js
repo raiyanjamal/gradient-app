@@ -79,13 +79,7 @@ document.getElementById('sub-btn').addEventListener("click", () => {
     counter = window.localStorage.length - 1;
 
     // creates child div and displays the gradient
-    let parent = document.getElementById("flex-container");
-    let child = document.createElement('div');
-    let childName = 'grad-item-' + gradIndex;
-    child.setAttribute('id', childName);
-    child.setAttribute('class', 'flex-item');
-    parent.appendChild(child);
-    document.getElementById(childName).style.background = thePad;
+	document.querySelector('#clear-history-btn').style.display = 'block'
 
     gradIndex++;
 })
@@ -139,3 +133,13 @@ function frontBtn() {
         return;
     }
 }
+
+const clearButton = document.querySelector('#clear-history-btn')
+clearButton.style.display = window.localStorage.length ? 'block' : 'none'
+const clearHistory = () => {
+	window.localStorage.clear()
+	document.getElementById('flex-container').innerHTML = ''
+	document.getElementById('history-header').innerHTML = 'empty!'
+	clearButton.style.display = 'none'
+}
+clearButton.onclick = clearHistory
