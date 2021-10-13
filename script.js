@@ -141,5 +141,8 @@ const clearHistory = () => {
 	document.getElementById('flex-container').innerHTML = ''
 	document.getElementById('history-header').innerHTML = 'empty!'
 	clearButton.style.display = 'none'
+	document.getElementById('back-btn').disabled = true
+	document.getElementById('front-btn').disabled = true
+	gradIndex = 0
 }
 clearButton.onclick = clearHistory
