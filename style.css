@@ -134,6 +134,26 @@ img.main-icon {
     color: #151515;
 }
 
+.history-header-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clear-history {
+    margin-left: 1rem;
+    border: 1px solid black;
+    padding: 0.25rem 0.75rem;
+    background: white;
+    border-radius: 999px;
+    cursor: pointer;
+}
+
+.clear-history:hover {
+    background: tomato;
+    color: white;
+    border-color: tomato;
+}
 .flex-item {
   background-color: tomato;
   padding: 5px;
