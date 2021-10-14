@@ -79,22 +79,30 @@ document.getElementById('sub-btn').addEventListener("click", () => {
     counter = window.localStorage.length - 1;
 
     // creates child div and displays the gradient
-	document.querySelector('#clear-history-btn').style.display = 'block'
+    document.querySelector('#clear-history-btn').style.display = 'block';
+
+    let parent = document.getElementById("flex-container");
+    let child = document.createElement('div');
+    let childName = 'grad-item-' + gradIndex;
+    child.setAttribute('id', childName);
+    child.setAttribute('class', 'flex-item');
+    parent.appendChild(child);
+    document.getElementById(childName).style.background = thePad;
 
     gradIndex++;
 })
 
 // copy to Clipboard
 document.getElementById('copy').addEventListener('click', () => {
-	const copyText = document.getElementById('gradient-output')
-	const copyTextValue = copyText.textContent
+    const copyText = document.getElementById('gradient-output')
+    const copyTextValue = copyText.textContent
 
-	navigator.clipboard.writeText(copyTextValue)
-	copyText.textContent = 'Copied!'
+    navigator.clipboard.writeText(copyTextValue)
+    copyText.textContent = 'Copied!'
 
-	setTimeout(() => {
-		copyText.textContent = copyTextValue
-	}, 2000)
+    setTimeout(() => {
+        copyText.textContent = copyTextValue
+    }, 2000)
 })
 
 let counter = gradIndex - 1;
@@ -137,12 +145,12 @@ function frontBtn() {
 const clearButton = document.querySelector('#clear-history-btn')
 clearButton.style.display = window.localStorage.length ? 'block' : 'none'
 const clearHistory = () => {
-	window.localStorage.clear()
-	document.getElementById('flex-container').innerHTML = ''
-	document.getElementById('history-header').innerHTML = 'empty!'
-	clearButton.style.display = 'none'
-	document.getElementById('back-btn').disabled = true
-	document.getElementById('front-btn').disabled = true
-	gradIndex = 0
+    window.localStorage.clear()
+    document.getElementById('flex-container').innerHTML = ''
+    document.getElementById('history-header').innerHTML = 'empty!'
+    clearButton.style.display = 'none'
+    document.getElementById('back-btn').disabled = true
+    document.getElementById('front-btn').disabled = true
+    gradIndex = 0
 }
 clearButton.onclick = clearHistory
